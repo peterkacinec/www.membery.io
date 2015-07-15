@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<title>www.membery.io</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="copyright" content="Unionsoft" />
+	<meta name="author" content="" />
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href='main.css' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+	<script>
+	$(function(){
+		$('#menu-container').removeClass('mobile-visible');
+		var mainMenuHidden = true;
+
+		$('.toogle-menu,.menu-close').click(function (e) {
+			$('#menu-container').toggleClass('mobile-visible');
+			e.stopPropagation();
+			return false;
+		});
+
+		// menu smoothing effect
+		$('#portal-menu-panel a[href*=#]:not([href=#])').click(function() {
+			$('#menu-container').removeClass('mobile-visible');
+
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+	</script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-55088225-3', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<nav>
+		<div id="mobile-menu-toggler">
+			<a href="" class="toogle-menu">
+				<i class="fa fa-bars fa-2x"></i>
+			</a>
+		</div>
+	</nav>
+	<nav id="menu-container" class="nav">
+		<div>
+			<a href="" class="menu-close">
+				<i class="fa fa-times fa-2x"></i>
+			</a>
+		</div>
+		<div class="container">
+			<h1>Membery</h1>
+		</div>
+		<ul id="portal-menu-panel">
+			<li><a href="#anchor_about">Intro</a></li>
+			<li><a href="#anchor_description">Čo je Membery</a></li>
+			<li><a href="#anchor_benefits">Výhody & Funkcionalita</a></li>
+			<li><a href="#anchor_background">Kto je za Membery</a></li>
+			<li><a href="#anchor_contact">Kontakt</a></li>
+		</ul>
+		<div class="copyright">Copyright © 2015 Membery. All rights reserved.</div>
+	</nav>
+
+	<a name="anchor_about"></a>
+	<section class="about">
+		<div class="container">
+			<h1>Membery</h1>
+			<p class="abstract">
+				<span>KOMPLEXNÁ<br>PLATFORMA<br>PRE RIADENIE</span>
+				<span><br>ČLENSKÝCH<br>ORGANIZÁCIÍ</span>
+			</p>
+		</div>
+	</section>
+
+	<section class="black">
+		<article>
+			<div class="img"><img src="img/1.png" height="140" width="140" alt=""></div>
+			<div class="text"><p>Plne prispôsobiteľné Cloud riešenie pre organizácie, dcérske organizácie a členov týchto organizácií.</p></div>
+		</article>
+		<article>
+			<div class="img"><img src="img/2.png" height="140" width="140" alt=""></div>
+			<div class="text"><p>Jednoducho nastaviteľná online platforma, s podporou pre mobilné zariadenia, manažovateľná aj bez znalostí z IT prostredia.</p></div>
+		</article>
+		<article>
+			<div class="img"><img src="img/3.png" height="140" width="140" alt=""></div>
+			<div class="text"><p>Neobmedzené možnosti koordinácie činností a manažmentu členov s možnosťami internej komunikácie, manažérskymi nástrojmi a verejným portálom.</p></div>
+		</article>
+	</section>
+
+	<a name="anchor_description"></a>
+	<section class="description">
+		<article><img src="img/notebook2.png" height="" width="250" alt=""></article>
+		<article>	
+			<h2>Čo je Membery</h2>
+			<h3>Pre koho je určené membery</h3>
+			<p>Flexibilné riešenie Membery je vhodné nielen pre malé organizácie, ale aj pre stredné a veľké organizácie s viacerými pod-organizáciami a tisíckami členov. 
+			Vzhľadom na tieto vlastnosti je Membery vhodné pre neziskové organizácie, športové alebo iné zväzy, asociácie, odborové a cirkevné organizácie ako aj iné organizácie so širokou základňou ako sú mestá a obce. 
+			Jednoduchá komunikácia, verejný portál a efektívny online manažment úloh, žiadostí a udalostí posúva Membery aj do oblasti kultúrno-športovo-spoločenských aktivít ako sú napríklad festivaly, turnaje, ale taktiež vernostné systémy pre fanúšikov nielen športových klubov.</p>
+
+			<h3>Čo je membery</h3>
+			<p>Membery je online služba pre rôzne typy organizácií, ktorá prináša efektívnu koordináciu činností, manažmentu procesov a organizáciu vzťahov členov organizácií. 
+			Medzi základné vlastnosti riešenia patrí: zaručená distribúcia informácií, sledovanie platieb, jednoduchý manažment členov ako aj špecifické riadenie procesov a úloh. 
+			Všetky informácie z Membery je možné veľmi efektívne publikovať na verejnom portáli s možnosťou publikovania aj iných informácií. 
+			Membery obsahuje viacero štandardných funkcií pre rýchle nasadenie v organizácii. Platforma je jednoducho manažovateľná a plne prispôsobiteľná zložitým požiadavkam a procesom pre efektívne riadenie organizácie.</p>
+		</article>
+		<article><img src="img/notebook1.png" height="" width="250" alt=""></article>
+	</section>
+
+	<a name="anchor_benefits"></a>
+	<section class="benefits">
+		<article>
+			<h2>Výhody nasadenia membery</h2>
+			<h3>Funkcionalita</h3>
+			<p>Manažment členskej základne, matriky, licencie<br>
+			Manažment oddelení, komisií <br>
+			Manaťment platieb a poplatkov, fakturácia <br>
+			Manažment riadenia úloh, žiadostí (podaní) a udalostí<br>
+			Komunikácia - interné správy, oznámenia a notifikácie <br>
+			Verejný portál <br>
+			Robustný model zabezpečenia a rolí<br>
+			Štatistiky & reporty <br>
+			Viacjazyčnosť
+			</p>
+
+			<h3>Naše riešenie</h3>
+			<p>Škálovateľné cloudové riešenie pre PC aj mobilné platformy <br>
+			Softvér ako služba (SaaS) – kupujete si hotovú službu, nie iba software <br>
+			Garantovaná bezpečnosť dat a ochrana údajov na jednom mieste <br>
+			Jednoducho rozšíriteľná platforma <br>
+			Plne prispôsobiteľné funkcie pre používateľov <br>
+			Preddefinované nastavenia pre rôzne typy organizácií<br>
+			Moderné dynamické pracovné prostredie</p>
+		</article>	
+	</section>
+
+	<a name="anchor_background"></a>
+	<section class="background">
+		<article>
+			<h2>Kto je za Membery</h2>
+			<p>Membery je produkt navrhnutý a vyvinutý spoločnosťou Unionsoft.</p>
+
+			<p>Unionsoft je spoločnosť špecializujúca sa na návrh, vývoj, implementáciu a podporu komplexných riešení pre organizácie s členskými základňami s rôznorodým zameraním.</p>
+
+			<p>Naše riešenie bolo vyvinuté tímom skúsených ľudí, ktorí pracovali na niekoľkých projektoch zameraných na vývoj softvérových riešení pre správu členských organizácií.</p>
+
+			<p>Unionsoft je spoločnosť podporovaná a akcelerovaná slovenským startupovým štúdiom Launcher.</p>
+		</article>
+	</section>
+
+	<a name="anchor_contact"></a>
+	<footer class="contact">
+		<article class="membery">
+			Membery
+		</article>
+		<article class="office">
+			<div class="title">Adresa</div>
+			<address>UnionSoft, s.r.o. <br>GBC IV <br>Galvaniho 17/B, <br>821 04 Bratislava 2, Slovakia</address>
+		</article>
+		<article class="footer-contact">
+			<div class="title">Kontakt</div>
+			<p>telefón: <a href="tel:+ 421 905 724 876 ">+ 421 905 724 876</a><br>General: <a href="mailto:info@membery.io">info@membery.io</a><br><a href="www.membery.io">www.membery.io</a></p>
+		</article>
+		<!-- <article class="newsletter">
+			<div class="title">Newsletter</div>
+			<p>Subscribe us</p>
+		</article> -->
+	</footer>
+
+	<section class="social">
+		<!-- <div>
+			<ul class="social-bar">
+				<li><a href="https://www.facebook.com/membery.io"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/membery_io"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+				<li><a href="https://www.linkedin.com/company/membery"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			</ul>
+		</div> -->
+		<div class="copyright">Copyright © 2015 Unionsoft. All rights reserved.</div>
+	</section>
+</body>
+</html>

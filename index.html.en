@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<title>www.membery.io</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="copyright" content="Unionsoft" />
+	<meta name="author" content="" />
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href='main.css' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+	<script>
+	$(function(){
+		$('#menu-container').removeClass('mobile-visible');
+		var mainMenuHidden = true;
+
+		$('.toogle-menu,.menu-close').click(function (e) {
+			$('#menu-container').toggleClass('mobile-visible');
+			e.stopPropagation();
+			return false;
+		});
+
+		// menu smoothing effect
+		$('#portal-menu-panel a[href*=#]:not([href=#])').click(function() {
+			$('#menu-container').removeClass('mobile-visible');
+
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+	</script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-55088225-3', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<nav>
+		<div id="mobile-menu-toggler">
+			<a href="" class="toogle-menu">
+				<i class="fa fa-bars fa-2x"></i>
+			</a>
+		</div>
+	</nav>
+	<nav id="menu-container" class="nav">
+		<div>
+			<a href="" class="menu-close">
+				<i class="fa fa-times fa-2x"></i>
+			</a>
+		</div>
+		<div class="container">
+			<h1>Membery</h1>
+		</div>
+		<ul id="portal-menu-panel">
+			<li><a href="#anchor_about">Intro</a></li>
+			<li><a href="#anchor_description">Description</a></li>
+			<li><a href="#anchor_benefits">Benefits & Features</a></li>
+			<li><a href="#anchor_background">Background</a></li>
+			<li><a href="#anchor_contact">Contact</a></li>
+		</ul>
+		<div class="copyright">Copyright © 2015 Membery. All rights reserved.</div>
+	</nav>
+
+	<a name="anchor_about"></a>
+	<section class="about">
+		<div class="container">
+			<h1>Membery</h1>
+			<p class="abstract">
+				<span>COMPREHENSIVE<br>MEMBERSHIP</span>
+				<span><br>MANAGEMENT<br>PLATFORM</span>
+			</p>
+		</div>
+	</section>
+
+	<section class="black">
+		<article>
+			<div class="img"><img src="img/1.png" height="140" width="140" alt=""></div>
+			<div class="text"><p>Fully customisable cloud based solution for central organisations, their subsidiaries and members.</p></div>
+		</article>
+		<article>
+			<div class="img"><img src="img/2.png" height="140" width="140" alt=""></div>
+			<div class="text"><p>Enhanced coordination and management of members through our communication and management tool.</p></div>
+		</article>
+		<article>
+			<div class="img"><img src="img/3.png" height="140" width="140" alt=""></div>
+			<div class="text"><p>Easy to set-up Mobile & Online platform with no requirements on IT operation.</p></div>
+		</article>
+	</section>
+
+	<a name="anchor_description"></a>
+	<section class="description">
+		<article><img src="img/notebook2.png" height="" width="250" alt=""></article>
+		<article>	
+			<h2>What is Membery?</h2>
+			<h3>Who is membery for?</h3>
+			<p>Regardless whether it is an organisation with complicated structures with thousands of members or small & medium sport's club, we've covered it all.
+			Membery is suitable for Non-Government Organization, Unions, Associations Sport & Hobbies organisations and other member based institutions.
+			Central management organizations may find Membery very helpful to execute various management tasks and communicational activities in a simple and effective way.</p>
+
+			<h3>What is Membery?</h3>
+			<p>Membery is an online software solution for various types of organisations to help them with effective coordination, management and organisation their members. 
+			Our core features are as following: Information distribution, tracking payments, simplifying members database or execution of specific tasks within the organization.
+			Membery provides several pre-set functionalities that are supporting standard processes in organization. Nonetheless, our solution is fully customized with features that are easy to manage and enable you to provide various organisational activities effectively.</p>
+		</article>
+		<article><img src="img/notebook1.png" height="" width="250" alt=""></article>
+	</section>
+
+	<a name="anchor_benefits"></a>
+	<section class="benefits">
+		<article>
+			<h2>Benefits</h2>
+			<h3>Feautures</h3>
+			<p>Integrated members management & Evidence<br>
+			Fees & Payments<br>
+			Commercial offers for members<br>
+			Easy & targeted communication with members<br>
+			Web portal management<br>
+			Robust security model<br>
+			Inquiries<br>	
+			Statistics & reports<br>
+			Multilingual
+			</p>
+
+			<h3>Our Solution</h3>
+			<p>Scalable cloud-based online solution that works on all modern devices PC, MAC, Tablet<br>
+			Software as a Service (SaaS) - No need for installation and maintenance on your side<br>
+			Guaranteed data security & protection<br>
+			Tailored made platform configuration<br>
+			Fully customised functionalities for end users<br>
+			Pre-sets for various types of organizations<br>
+			Dynamic & structured UX & UI</p>
+		</article>	
+	</section>
+
+	<a name="anchor_background"></a>
+	<section class="background">
+		<article>
+			<h2>Our Background</h2>
+			<p>Membery is a product developed & designed by Unionsoft. Unionsoft is an IT & software company specialized in providing complex management platform solution for various member based organizations.</p>
+
+			<p>Our solution has been developed by a team of experienced people that worked on several projects focused on developing member management software solutions.</p>
+
+			<p>Unionsoft is a company supported & accelerated by Launcher, a Slovak start-up studio.</p>
+		</article>
+	</section>
+
+	<a name="anchor_contact"></a>
+	<footer class="contact">
+		<article class="membery">
+			Membery
+		</article>
+		<article class="office">
+			<div class="title">Office</div>
+			<address>UnionSoft, s.r.o. <br>GBC IV <br>Galvaniho 17/B, <br>821 04 Bratislava 2, Slovakia</address>
+		</article>
+		<article class="footer-contact">
+			<div class="title">Contact</div>
+			<p>phone: <a href="tel:+ 421 905 724 876 ">+ 421 905 724 876</a><br>General: <a href="mailto:info@membery.io">info@membery.io</a><br><a href="www.membery.io">www.membery.io</a></p>
+		</article>
+		<!-- <article class="newsletter">
+			<div class="title">Newsletter</div>
+			<p>Subscribe us</p>
+		</article> -->
+	</footer>
+
+	<section class="social">
+		<!-- <div>
+			<ul class="social-bar">
+				<li><a href="https://www.facebook.com/membery.io"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/membery_io"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+				<li><a href="https://www.linkedin.com/company/membery"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			</ul>
+		</div> -->
+		<div class="copyright">Copyright © 2015 Unionsoft. All rights reserved.</div>
+	</section>
+</body>
+</html>

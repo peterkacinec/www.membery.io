@@ -1,0 +1,5 @@
+AddLanguage en .en
+AddLanguage sk .sk
+
+LanguagePriority en sk
+ForceLanguagePriority Fallback
