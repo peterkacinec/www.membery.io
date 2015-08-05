@@ -292,6 +292,7 @@ body {
 	padding: 50px 0;
 	background-color: black;
 	color: white;
+    position: relative;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -311,8 +312,15 @@ body {
 }
 
 .contact article{
-	width: 215px;
+	width: 240px;
 	padding: 0 5px;
+}
+
+.contact article:first-child{
+	position: absolute;
+	left: 0;
+	padding: 0;
+	text-align: left;
 }
 
 .contact .membery{
@@ -342,6 +350,8 @@ body {
 .newsletter .title{
 	font-weight: bold;
 }
+
+
 
 .social{
 	background-color: black;
@@ -393,6 +403,30 @@ body {
 		-webkit-flex-wrap: wrap;
 			-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
+	}
+	.contact{
+		-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+				flex-direction: column;
+		-webkit-align-items: center;
+			-ms-flex-align: center;
+				align-items: center;
+		text-align: center;
+	}
+	.contact article:nth-child(2){
+		display: none;
+	}
+	.contact article:nth-child(1){
+		position: relative;
+		width: 100%;
+		text-align: left;
+		order: 3;
+	}
+	.contact article:nth-child(3){
+		order: 1;
+	}
+	.contact article:nth-child(4){
+		order: 2;
 	}
 }
 
