@@ -167,12 +167,6 @@
 
 	<a name="anchor_contact"></a>
 	<footer class="contact">
-	<article class="footer-overlay">
-			<div><a href="http://www.launcher.sk/" target="_blank"><img src="img/launcher.png" height="" width="236" alt=""></a></div>
-		</article>
-		<article class="membery">
-			<!-- Membery -->
-		</article>
 		<article class="office">
 			<div class="title">Office</div>
 			<address>UnionSoft, s.r.o. <br>GBC IV <br>Galvaniho 17/B, <br>821 04 Bratislava 2, Slovakia</address>
@@ -196,6 +190,7 @@
 			</ul>
 		</div> -->
 		<div class="copyright">Copyright © 2015 Unionsoft. All rights reserved.</div>
+		<img src="img/Launcher Label.png" alt="" width="180" height="63">
 	</section>
 </body>
 </html>
